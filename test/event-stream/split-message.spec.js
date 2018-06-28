@@ -1,8 +1,7 @@
-var util = require('../../lib/util');
+var AWS = require('../helpers').AWS;
+var Buffer = AWS.util.Buffer;
 var splitMessage = require('../../lib/event-stream/split-message').splitMessage;
 var allocBuffer = require('../../lib/event-stream/alloc-buffer').allocBuffer;
-var Buffer = util.Buffer;
-
 
 describe('splitMessage', function() {
     it('should throw when given a message under 16 bytes', function() {

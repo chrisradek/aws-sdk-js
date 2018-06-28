@@ -1,5 +1,6 @@
 var stream = require('stream');
 var AWS = require('../helpers').AWS;
+var Buffer = AWS.util.Buffer;
 var createEventStream = require('../../lib/event-stream/streaming-create-event-stream').createEventStream;
 var testEventMessages = require('./test-event-messages.fixture');
 var mockEventStreamShape = require('./test-event-stream-model.fixture').mockEventStreamShape;

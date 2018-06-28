@@ -1,3 +1,5 @@
+var AWS = require('../helpers').AWS;
+var Buffer = AWS.util.Buffer;
 var eventMessageChunker = require('../../lib/event-stream/event-message-chunker').eventMessageChunker;
 var testEventMessages = require('./test-event-messages.fixture');
 

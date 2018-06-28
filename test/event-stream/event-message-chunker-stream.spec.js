@@ -3,6 +3,8 @@ var EventMessageChunkerStream = require('../../lib/event-stream/event-message-ch
 var allocBuffer = require('../../lib/event-stream/alloc-buffer').allocBuffer;
 var testEventMessages = require('./test-event-messages.fixture');
 var MockEventMessageSource = require('./mock-event-message-source-stream.fixture').MockEventMessageSource;
+var AWS = require('../helpers').AWS;
+var Buffer = AWS.util.Buffer;
 
 // Only run these tests in node.js >= 0.10
 if (Transform) {
